@@ -1,0 +1,4 @@
+anthropic
+gradio
+yt-dlp
+python-dotenv
