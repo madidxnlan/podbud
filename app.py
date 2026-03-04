@@ -287,7 +287,7 @@ def run_pipeline_ui(
 
 
 def build_ui():
-    with gr.Blocks(title="CastKit", css=CSS, theme=gr.themes.Base()) as app:
+    with gr.Blocks(title="CastKit") as app:
 
         gr.HTML("""
         <div class="ck-header">
@@ -361,7 +361,7 @@ def build_ui():
                             label="Format: EP ##: [hook] with [guest], [company]",
                             lines=6,
                             interactive=True,
-                            show_copy_button=True
+                            
                         )
                     with gr.Column():
                         gr.HTML('<p class="step-label">Thumbnail Titles — pick one</p>')
@@ -369,7 +369,7 @@ def build_ui():
                             label="Short enough to read on a thumbnail",
                             lines=6,
                             interactive=True,
-                            show_copy_button=True
+                            
                         )
 
             # ── STEP 3: DESCRIPTIONS ───────────────────────────
@@ -379,7 +379,7 @@ def build_ui():
                     label="Paste this into Captivate when uploading your MP3",
                     lines=3,
                     interactive=True,
-                    show_copy_button=True
+                    
                 )
                 gr.HTML('<p class="step-label" style="margin-top:1.5rem">YouTube Description + Chapters</p>')
                 with gr.Row():
@@ -388,14 +388,14 @@ def build_ui():
                             label="Full show notes for YouTube description",
                             lines=12,
                             interactive=True,
-                            show_copy_button=True
+                            
                         )
                     with gr.Column(scale=1):
                         chapters_out = gr.Textbox(
                             label="YouTube Chapters — paste at bottom of description",
                             lines=12,
                             interactive=True,
-                            show_copy_button=True
+                            
                         )
 
             # ── STEP 4: GRAPHICS CUES ─────────────────────────
@@ -410,7 +410,7 @@ def build_ui():
                     label="Graphics cue preview",
                     lines=20,
                     interactive=False,
-                    show_copy_button=True
+                    
                 )
 
             # ── STEP 5: SOCIAL ────────────────────────────────
@@ -419,7 +419,7 @@ def build_ui():
                     label="LinkedIn · Twitter/X · Instagram",
                     lines=20,
                     interactive=True,
-                    show_copy_button=True
+                    
                 )
 
             # ── DOWNLOADS ─────────────────────────────────────
